@@ -1,0 +1,43 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.MediMeet:backend >------------------------
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ backend ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to C:\Users\nehal\Downloads\backend\backend\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/nehal/Downloads/backend/backend/src/main/java/com/MediMeet/backend/controller/PatientController.java:[22,48] cannot find symbol
+  symbol:   method addPatient(com.MediMeet.backend.model.Patient)
+  location: variable patientService of type com.MediMeet.backend.service.PatientService
+[ERROR] /C:/Users/nehal/Downloads/backend/backend/src/main/java/com/MediMeet/backend/controller/PatientController.java:[32,56] incompatible types: java.util.Optional<com.MediMeet.backend.model.Patient> cannot be converted to com.MediMeet.backend.model.Patient
+[ERROR] /C:/Users/nehal/Downloads/backend/backend/src/main/java/com/MediMeet/backend/controller/PatientController.java:[44,44] incompatible types: void cannot be converted to boolean
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.166 s
+[INFO] Finished at: 2025-11-30T02:31:37+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/nehal/Downloads/backend/backend/src/main/java/com/MediMeet/backend/controller/PatientController.java:[22,48] cannot find symbol
+[ERROR]   symbol:   method addPatient(com.MediMeet.backend.model.Patient)
+[ERROR]   location: variable patientService of type com.MediMeet.backend.service.PatientService
+[ERROR] /C:/Users/nehal/Downloads/backend/backend/src/main/java/com/MediMeet/backend/controller/PatientController.java:[32,56] incompatible types: java.util.Optional<com.MediMeet.backend.model.Patient> cannot be converted to com.MediMeet.backend.model.Patient
+[ERROR] /C:/Users/nehal/Downloads/backend/backend/src/main/java/com/MediMeet/backend/controller/PatientController.java:[44,44] incompatible types: void cannot be converted to boolean
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -34,3 +34,5 @@ build/
 
 ### Secrets ###
 application.properties
+*.txt
+.ps1

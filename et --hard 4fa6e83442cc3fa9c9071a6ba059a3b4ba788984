@@ -1,0 +1,30 @@
+[33mcommit 80489c77b079d40cb5301151a2d683fb922512a9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: theNehal <nehal2004sharma@gmail.com>
+Date:   Sat Nov 29 14:14:47 2025 +0530
+
+    Secure application properties
+
+[33mcommit d1a5defb8f4d3414664fd1762e84c691a6b96fac[m
+Author: theNehal <nehal2004sharma@gmail.com>
+Date:   Sat Nov 29 14:09:41 2025 +0530
+
+    Remove secret from properties file
+
+[33mcommit 4fa6e83442cc3fa9c9071a6ba059a3b4ba788984[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: b0d2191 867679f
+Author: theNehal <nehal2004sharma@gmail.com>
+Date:   Wed Nov 26 21:12:31 2025 +0530
+
+    Merge branch 'main' of https://github.com/theNehal/MediMeet_backend
+
+[33mcommit 867679ffa761aa146606f0f9e2a2688ea98cf877[m
+Author: Nehal Sharma <nehal2004sharma@gmail.com>
+Date:   Wed Nov 26 20:56:40 2025 +0530
+
+    Initial commit
+
+[33mcommit b0d2191ee64531f55a7699a4c33120b7b67a3d2c[m
+Author: theNehal <nehal2004sharma@gmail.com>
+Date:   Wed Nov 26 20:34:07 2025 +0530
+
+    Initial commit
