@@ -53,6 +53,11 @@ public class AppointmentService {
         return appointmentRepo.save(appointment);
     }
 
+    // Get all appointments (Admin only)
+    public List<Appointment> getAllAppointments() {
+        return appointmentRepo.findAll();
+    }
+
     // Get all appointments for a patient
     public List<Appointment> getAppointmentsByPatient(int patientId) {
         Patient patient = patientRepo.findById(patientId).orElse(null);
