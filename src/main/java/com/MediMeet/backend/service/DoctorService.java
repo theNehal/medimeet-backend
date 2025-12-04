@@ -10,9 +10,11 @@ import java.util.List;
 public class DoctorService {
 
     private final DoctorRepository doctorRepo;
+    private final org.springframework.security.crypto.password.PasswordEncoder passwordEncoder;
 
-    public DoctorService(DoctorRepository doctorRepo) {
+    public DoctorService(DoctorRepository doctorRepo, org.springframework.security.crypto.password.PasswordEncoder passwordEncoder) {
         this.doctorRepo = doctorRepo;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public List<Doctor> getAllDoctors() {
@@ -24,6 +26,9 @@ public class DoctorService {
     }
 
     public Doctor addDoctor(Doctor doctor) {
+        if (doctor.getPassword_hash() != null && !doctor.getPassword_hash().startsWith("$2a$")) {
+            doctor.setPassword_hash(passwordEncoder.encode(doctor.getPassword_hash()));
+        }
         return doctorRepo.save(doctor);
     }
 
